@@ -44,9 +44,9 @@ analytics or user data.
 
 GitHub Pages deploys the repository root through
 `.github/workflows/deploy-pages.yml` on every push to `main`. No build command
-is required. The project site is:
+is required. The public site is:
 
-`https://microspotlight.github.io/BugSnap-WebSite/`
+`https://bugsnap.microspotlight.team/`
 
 ## Source assets
 
