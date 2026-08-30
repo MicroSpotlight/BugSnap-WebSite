@@ -1,0 +1,118 @@
+@media (max-width: 1040px) {
+  .hero,
+  body[data-variant="issue"] .hero,
+  body[data-variant="field"] .hero {
+    grid-template-columns: 1fr 0.78fr;
+    gap: 36px;
+  }
+
+  .evidence-tag { width: 190px; }
+  .evidence-tag-top { left: -54px; }
+  .evidence-tag-bottom { right: -12px; }
+  .proof-grid { grid-template-columns: repeat(3, 1fr); }
+  .proof-grid p { grid-column: 1 / -1; border-top: 1px solid var(--line); border-left: 0; text-align: center; }
+  .product-grid { gap: 36px; }
+  .stage-note { display: none; }
+}
+
+@media (max-width: 820px) {
+  :root { --section-space: 88px; }
+  body[data-density="compact"] { --section-space: 64px; }
+  body[data-density="spacious"] { --section-space: 112px; }
+  .section-shell, .site-header { width: min(100% - 32px, 720px); }
+
+  .menu-button { display: block; cursor: pointer; }
+  .site-nav {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    display: none;
+    width: min(320px, calc(100vw - 32px));
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgb(255 255 255 / 96%);
+    box-shadow: 0 18px 60px rgb(30 34 46 / 16%);
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-nav.is-open { display: flex; }
+  .site-nav a { justify-content: space-between; }
+  .language-switch { width: 100%; }
+  .language-switch button { flex: 1; }
+  body[data-variant="issue"] .site-nav { background: rgb(30 32 39 / 98%); border-color: #383b44; }
+
+  .hero,
+  body[data-variant="issue"] .hero,
+  body[data-variant="field"] .hero {
+    display: flex;
+    min-height: auto;
+    padding-block: 56px 96px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 72px;
+  }
+
+  body[data-variant="issue"] .hero { width: 100%; padding-inline: 16px; }
+  body[data-variant="field"] .hero h1 { font-size: clamp(3.8rem, 14vw, 6.2rem); }
+  .hero-product, body[data-variant="field"] .hero-product { min-height: 620px; }
+  .phone-hero, body[data-variant="issue"] .phone-hero, body[data-variant="field"] .phone-hero {
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    transform: rotate(1.5deg);
+  }
+
+  .evidence-tag-top, body[data-variant="field"] .evidence-tag-top { top: 40px; left: max(0px, calc(50% - 250px)); }
+  .evidence-tag-bottom, body[data-variant="field"] .evidence-tag-bottom { right: max(0px, calc(50% - 250px)); bottom: 48px; }
+  .annotation-line { right: 10%; width: 80%; }
+
+  .workflow-list li { grid-template-columns: 64px 1fr; }
+  .workflow-list li > div { grid-template-columns: 1fr; gap: 8px; }
+  .product-grid { grid-template-columns: 1fr; }
+  .product-copy { max-width: 620px; }
+  .trust-layout { grid-template-columns: 1fr; gap: 56px; }
+
+  .release { grid-template-columns: auto 1fr; }
+  .release .button { grid-column: 1 / -1; }
+  .site-footer { grid-template-columns: 1fr auto; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  h1 { font-size: clamp(3rem, 13vw, 4.2rem); }
+  h2 { font-size: clamp(2.35rem, 10vw, 3.3rem); }
+  .section-shell, .site-header { width: calc(100% - 32px); }
+  .hero-actions { flex-direction: column; }
+  .button { width: 100%; }
+  .assurance-list { display: grid; }
+
+  .hero-product, body[data-variant="field"] .hero-product { min-height: 555px; }
+  .phone-hero, body[data-variant="issue"] .phone-hero, body[data-variant="field"] .phone-hero {
+    width: 250px;
+    height: 505px;
+  }
+
+  .evidence-tag { width: 172px; padding: 12px; border-radius: 16px; }
+  .evidence-tag-top, body[data-variant="field"] .evidence-tag-top { top: 28px; left: 0; }
+  .evidence-tag-bottom, body[data-variant="field"] .evidence-tag-bottom { right: 0; bottom: 24px; }
+
+  .proof-grid { grid-template-columns: 1fr; }
+  .proof-grid > * + * { border-top: 1px solid var(--line); border-left: 0; }
+  .proof-grid p { grid-column: auto; }
+
+  .workflow-list li { grid-template-columns: 48px 1fr; }
+  .screen-tabs { display: grid; width: 100%; grid-template-columns: repeat(2, 1fr); }
+  .phone-product { width: 270px; height: 555px; }
+  .product-stage { min-height: 560px; }
+
+  .boundary-list div { grid-template-columns: 1fr; gap: 8px; }
+  .release { padding: 28px; grid-template-columns: 1fr; }
+  .release img { width: 88px; height: 88px; }
+  .site-footer { grid-template-columns: 1fr; }
+  .site-footer nav { flex-wrap: wrap; }
+  .footer-brand { grid-template-columns: auto 1fr; }
+  .footer-brand span { grid-column: 1 / -1; }
+  .tweaks { right: 12px; bottom: 12px; width: calc(100% - 24px); }
+}

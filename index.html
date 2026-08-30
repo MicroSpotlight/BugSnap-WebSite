@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="BugSnap turns screenshots, recordings, and device context into structured GitHub Issues from your phone."
+    />
+    <meta name="theme-color" content="#f4f5fa" />
+    <meta property="og:title" content="BugSnap — Capture the evidence. Create the Issue." />
+    <meta
+      property="og:description"
+      content="A mobile bug-reporting tool for developers, QA engineers, and product teams using GitHub."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/bugsnap-app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>BugSnap — Mobile bug reporting for GitHub</title>
+    <!--
+      Design system declaration
+      Type: SF Pro semantic stack; scale 13 / 16 / 20 / 32 / 56 / 80.
+      Color: grouped off-white canvas, white surfaces, near-black brand panel, BugSnap blue.
+      Rhythm: 4 / 8 / 12 / 16 / 24 / 32 / 48 / 80 / 120.
+      Headers: small mono eyebrow followed by one direct statement.
+      Motion: 180–700ms, one ease curve, disabled for reduced-motion users.
+    -->
+  </head>
+  <body data-variant="evidence" data-density="comfortable">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="BugSnap home">
+        <img src="assets/bugsnap-app-icon.png" alt="" width="40" height="40" />
+        <span>BugSnap</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#workflow" data-i18n="nav.workflow">Workflow</a>
+        <a href="#product" data-i18n="nav.product">Product</a>
+        <a href="#trust" data-i18n="nav.trust">Trust</a>
+        <a class="nav-cta" href="#release" data-i18n="nav.release">Release status</a>
+        <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="language.label">
+          <button type="button" data-locale="en" aria-pressed="true">EN</button>
+          <button type="button" data-locale="zh" aria-pressed="false">中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Mobile bug reporting for GitHub</p>
+          <h1 id="hero-title">The bug is already on your screen. Send the evidence with it.</h1>
+          <p class="hero-summary">
+            Capture a screenshot or recording, add the context your team needs, and review a
+            structured GitHub Issue before it is created.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#workflow" data-i18n="hero.primary">See the workflow</a>
+            <a class="button button-quiet" href="#product" data-i18n="hero.secondary">Explore the product</a>
+          </div>
+          <ul class="assurance-list" aria-label="Product assurances">
+            <li data-i18n="hero.assurance.repositories">Selected repositories only</li>
+            <li data-i18n="hero.assurance.preview">Preview before creating</li>
+            <li data-i18n="hero.assurance.code">No repository code required</li>
+          </ul>
+        </div>
+
+        <div class="hero-product reveal" data-delay="1" aria-label="BugSnap product preview">
+          <div class="evidence-tag evidence-tag-top">
+            <span>01</span>
+            <strong data-i18n="hero.capture.title">Capture</strong>
+            <small data-i18n="hero.capture.detail">Screenshot · photo · recording</small>
+          </div>
+          <div class="phone phone-hero">
+            <div class="phone-screen">
+              <img src="assets/bugsnap-review.png" alt="BugSnap review screen showing a structured GitHub Issue" data-hero-image data-i18n-alt="screen.review" />
+            </div>
+          </div>
+          <div class="evidence-tag evidence-tag-bottom">
+            <span>04</span>
+            <strong data-i18n="hero.deliver.title">Deliver</strong>
+            <small data-i18n="hero.deliver.detail">One reviewable GitHub Issue</small>
+          </div>
+          <div class="annotation-line" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Product limits and privacy facts">
+        <div class="section-shell proof-grid">
+          <div><strong>20</strong><span data-i18n="proof.attachments">attachments per report</span></div>
+          <div><strong>0</strong><span data-i18n="proof.code">repository code needed</span></div>
+          <div><strong data-i18n="proof.days">30 days</strong><span data-i18n="proof.retention">temporary media retention</span></div>
+          <p data-i18n="proof.statement">Evidence stays attached to the work, not scattered across chat threads.</p>
+        </div>
+      </section>
+
+      <section id="workflow" class="workflow section-shell" aria-labelledby="workflow-title">
+        <header class="section-heading reveal">
+          <p class="eyebrow" data-i18n="workflow.eyebrow">A complete handoff</p>
+          <h2 id="workflow-title" data-i18n="workflow.title">From “look here” to an Issue your team can act on.</h2>
+        </header>
+
+        <ol class="workflow-list">
+          <li class="reveal">
+            <span class="step-number">01</span>
+            <div>
+              <h3 data-i18n="workflow.capture.title">Capture the evidence</h3>
+              <p data-i18n="workflow.capture.detail">Start with a screenshot, photo, short recording, file, clipboard, or Share Sheet.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="1">
+            <span class="step-number">02</span>
+            <div>
+              <h3 data-i18n="workflow.mark.title">Mark what matters</h3>
+              <p data-i18n="workflow.mark.detail">Add arrows, boxes, drawing, text, or mosaic without leaving the mobile flow.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="2">
+            <span class="step-number">03</span>
+            <div>
+              <h3 data-i18n="workflow.context.title">Add useful context</h3>
+              <p data-i18n="workflow.context.detail">BugSnap organizes title, severity, reproduction details, device, OS, and app version.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="3">
+            <span class="step-number">04</span>
+            <div>
+              <h3 data-i18n="workflow.review.title">Review, then create</h3>
+              <p data-i18n="workflow.review.detail">Choose the repository and metadata, preview the final Issue, then hand it to GitHub.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="product" class="product-section" aria-labelledby="product-title">
+        <div class="section-shell product-grid">
+          <div class="product-copy reveal">
+            <p class="eyebrow eyebrow-light" data-i18n="product.eyebrow">The actual product</p>
+            <h2 id="product-title" data-i18n="product.title">A focused path, built for the phone in your hand.</h2>
+            <p data-i18n="product.detail">
+              BugSnap keeps capture, context, destination, and Issue preview in one recoverable flow.
+              Local drafts and retryable submissions make it practical beyond a perfect network.
+            </p>
+            <div class="screen-tabs" role="tablist" aria-label="Choose a BugSnap screen">
+              <button type="button" role="tab" aria-selected="true" data-screen="home" data-i18n="product.tab.home">Home</button>
+              <button type="button" role="tab" aria-selected="false" data-screen="capture" data-i18n="product.tab.capture">Capture</button>
+              <button type="button" role="tab" aria-selected="false" data-screen="details" data-i18n="product.tab.context">Context</button>
+              <button type="button" role="tab" aria-selected="false" data-screen="review" data-i18n="product.tab.review">Review</button>
+            </div>
+          </div>
+
+          <div class="product-stage reveal" data-delay="1">
+            <div class="stage-note stage-note-left">
+              <span data-i18n="product.input">Input</span>
+              <strong data-i18n="product.input.detail">First-hand evidence</strong>
+            </div>
+            <div class="phone phone-product">
+              <div class="phone-screen">
+                <img
+                  data-product-image
+                  src="assets/bugsnap-home.png"
+                  alt="BugSnap home screen with drafts, recent reports, and monthly usage"
+                />
+              </div>
+            </div>
+            <div class="stage-note stage-note-right">
+              <span data-i18n="product.output">Output</span>
+              <strong data-i18n="product.output.detail">A structured Issue</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust" class="trust section-shell" aria-labelledby="trust-title">
+        <header class="section-heading reveal">
+          <p class="eyebrow" data-i18n="trust.eyebrow">Clear boundaries</p>
+          <h2 id="trust-title" data-i18n="trust.title">Built to move evidence, not to browse your code.</h2>
+        </header>
+
+        <div class="trust-layout">
+          <div class="trust-statement reveal">
+            <p data-i18n="trust.detail">
+              GitHub access is limited to repositories selected for the BugSnap GitHub App. The
+              mobile client keeps no App private key, installation token, or long-term media key.
+            </p>
+            <a href="https://bugsnap-api.microspotlight.team/legal/privacy" data-i18n="trust.privacy">Read the privacy policy</a>
+          </div>
+          <dl class="boundary-list reveal" data-delay="1">
+            <div><dt data-i18n="trust.phone">On your phone</dt><dd data-i18n="trust.phone.detail">Capture, annotate, review, and recover drafts.</dd></div>
+            <div><dt data-i18n="trust.bugsnap">In BugSnap</dt><dd data-i18n="trust.bugsnap.detail">Short-lived sessions, media processing, and Issue delivery.</dd></div>
+            <div><dt data-i18n="trust.github">In GitHub</dt><dd data-i18n="trust.github.detail">The final Issue, ready for assignment and team follow-through.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="release" class="release section-shell reveal" aria-labelledby="release-title">
+        <img src="assets/bugsnap-app-icon.png" alt="BugSnap app icon" width="112" height="112" data-i18n-alt="app.icon" />
+        <div>
+          <p class="eyebrow eyebrow-light" data-i18n="release.eyebrow">First release</p>
+          <h2 id="release-title" data-i18n="release.title">BugSnap is preparing for the App Store.</h2>
+          <p data-i18n="release.detail">iOS is the first release. Android is being brought to feature parity.</p>
+        </div>
+        <a class="button button-inverse" href="https://bugsnap-api.microspotlight.team/support" data-i18n="release.support">Contact support</a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div class="footer-brand">
+        <img src="assets/bugsnap-app-icon.png" alt="" width="32" height="32" />
+        <strong>BugSnap</strong>
+        <span data-i18n="footer.tagline">Capture the evidence. Create the Issue.</span>
+      </div>
+      <nav aria-label="Legal and support">
+        <a href="https://bugsnap-api.microspotlight.team/support" data-i18n="footer.support">Support</a>
+        <a href="https://bugsnap-api.microspotlight.team/legal/privacy" data-i18n="footer.privacy">Privacy</a>
+        <a href="https://bugsnap-api.microspotlight.team/legal/terms" data-i18n="footer.terms">Terms</a>
+      </nav>
+      <p>© <span data-year></span> MicroSpotlight</p>
+    </footer>
+
+    <aside class="tweaks" data-tweaks hidden aria-label="Design variations">
+      <div class="tweaks-header">
+        <strong>Design view</strong>
+        <button type="button" data-close-tweaks aria-label="Close design view">×</button>
+      </div>
+      <p>Hero direction</p>
+      <div class="tweak-options">
+        <button type="button" data-variant="evidence">A · Evidence</button>
+        <button type="button" data-variant="issue">B · Issue</button>
+        <button type="button" data-variant="field">C · Field note</button>
+      </div>
+      <label>
+        Density
+        <select data-density>
+          <option value="compact">Compact</option>
+          <option value="comfortable" selected>Comfortable</option>
+          <option value="spacious">Spacious</option>
+        </select>
+      </label>
+    </aside>
+
+    <script>
+      const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+        "variant": "evidence",
+        "density": "comfortable"
+      }/*EDITMODE-END*/;
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
