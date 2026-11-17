@@ -19,6 +19,8 @@ The header, hero, and release section link to the public App Store listing
 (`6804155816`). Release copy follows the verified public version in
 `product-facts.md`; updates still in review are not advertised as available.
 Support, privacy, and terms remain available in the footer.
+The current release section highlights public version 0.2.0: iPhone Duo
+adaptation, landscape text editing, and cross-display media selection.
 
 ## Design variations
 
