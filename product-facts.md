@@ -1,8 +1,8 @@
 # BugSnap · Verified Product Facts
 
-> Verified: 2026-08-30
+> Verified: 2026-11-17
 >
-> Sources: first-party BugSnap README, product document, technical guide, App Store metadata, and current iOS screenshots
+> Sources: first-party BugSnap README, product document, technical guide, App Store Connect, Apple's public lookup API, and current iOS screenshots
 
 ## Structured facts used by the website
 
@@ -14,11 +14,13 @@
 6. Long-term GitHub App credentials and object-storage credentials remain on the server, not in the mobile client.
 7. Temporary media that is not attached to a successfully created Issue is retained for 30 days by default.
 8. Local drafts and retryable submissions support recovery across interruptions and weak networks.
-9. The iOS release is in App Store preparation; Android is being migrated toward feature parity.
+9. BugSnap is available on the App Store for iPhone and iPad. Apple's public lookup API confirmed version 0.1.0 on 2026-11-17; Android is being migrated toward feature parity.
+10. The App Store download destination is `https://apps.apple.com/app/id6804155816` (BugSnap: GitHub Issues).
 
 ## Copy implications
 
-- Use “preparing for the App Store,” not “available now.”
+- Use “available on the App Store” and link to the verified app ID.
+- Only promote features included in the public App Store version. Pending updates, including Duo adaptation while 0.2.0 awaits review, must not be described as already available.
 - Describe Android as being brought to parity, not as a released product.
 - Do not invent testimonials, customer counts, time-saved statistics, or availability dates.
 - Prefer concrete workflow and privacy facts over broad productivity claims.

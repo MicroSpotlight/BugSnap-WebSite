@@ -15,6 +15,11 @@ Open `http://localhost:4173`.
 The header language switch covers English and Simplified Chinese, follows the
 browser language on first visit, and persists the user's choice locally.
 
+The header, hero, and release section link to the public App Store listing
+(`6804155816`). Release copy follows the verified public version in
+`product-facts.md`; updates still in review are not advertised as available.
+Support, privacy, and terms remain available in the footer.
+
 ## Design variations
 
 The production default is the **Evidence first** direction. Open
